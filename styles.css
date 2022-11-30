@@ -1,0 +1,16 @@
+li{
+    display: inline;
+    margin: 10px;
+}
+
+#nav-bar{
+    display: flex;
+    
+}
+
+@media screen and (max-width: 600px){
+    li{
+        display: block;
+        margin: 10px;
+    }
+}
