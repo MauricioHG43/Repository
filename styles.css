@@ -1,16 +1,16 @@
-li{
-    display: inline;
-    margin: 10px;
+html {
+    scroll-behavior: smooth;
 }
 
-#nav-bar{
-    display: flex;
-    
+a:focus,
+button:focus{
+    outline: none;
 }
 
-@media screen and (max-width: 600px){
-    li{
-        display: block;
-        margin: 10px;
-    }
+.fs-underdog {
+    font-family: 'Underdog', sans-serif;
+}
+.hero-bg {
+    background-image: url('koku-bottles.jpg');
+
 }
