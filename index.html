@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kokumbucha</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fonts de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-white text-neutral-900">
     <!-- Navbar -->
@@ -23,25 +24,22 @@
                     <span class="text-lg font-bold px-2 py-1 fs-underdog">KOKU</span>
                 </a>
                 
-                <div class="hidden md:flex space-x-8">
+                <div class="flex space-x-8">
                     <a href="#productos" class="hover:underline">Productos</a>
                     <!--<a href="#nosotros" class="hover:underline">Nosotros</a>-->
                     <!--<a href="#noticias" class="hover:underline">Noticias</a>-->
+                    <a href="https://www.instagram.com/_kokumbucha/" target="_blank" class="hover:underline">Instagram</a>
                 </div>
-                <button class="md:hidden">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
             </div>
         </div>
     </nav>
 
-    
     <!-- Hero Section -->
     <section id="hero" class="hero-bg min-h-screen flex items-center">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <button class="m-auto px-5 py-4 bg-neutral-200 text-neutral-900 rounded hover:bg-neutral-300 hover:text-neutral-700 transition">
-                CONTACTO
-            </button>
+            <a href="" class="m-auto px-5 py-4 text-shadow-md text-shadow-neutral-400 bg-transparent border-2 border-neutral-300 text-neutral-300 rounded hover:border-stone-700 hover:text-stone-700 transition">
+                contacto
+            </a>
         </div>
     </section>
 
@@ -50,46 +48,39 @@
         <div class="container mx-auto px-6">
             <div class="my-10">
                 <h2 class="mb-3 text-4xl md:text-6xl font-neutral-900 text-center"> KOKU </h2>
-                <h6 class="text-base text-neutral-800 text-center"> Combucha Local </h6>
+                <h6 class="text-base text-neutral-800 text-center"> Kombucha Local </h6>
             </div>
             <div class="mx-auto grid grid-cols-2 md:grid-cols-3">
-                <img src="koku-cat.png" alt="Botella de Kokumbucha" class="aspect-square invert">
-                <img src="koku-bottles.jpg" alt="Botella de Kokumbucha" class="aspect-square hue-rotate-90">
-                <img src="koku-cat.png" alt="Botella de Kokumbucha" class="aspect-square">
-                <img src="koku-bottles.jpg" alt="Botella de Kokumbucha" class="aspect-square sepia">
-                <img src="koku-cat.png" alt="Botella de Kokumbucha" class="aspect-square hue-rotate-90">
-                <img src="koku-bottles.jpg" alt="Botella de Kokumbucha" class="aspect-square hue-rotate-180">
+                <img src="assets/img/koku-cat.png" alt="Botella de Kokumbucha" class="aspect-square invert">
+                <img src="assets/img/koku-bottles.jpg" alt="Botella de Kokumbucha" class="aspect-square hue-rotate-90">
+                <img src="assets/img/koku-cat.png" alt="Botella de Kokumbucha" class="aspect-square">
+                <img src="assets/img/koku-bottles.jpg" alt="Botella de Kokumbucha" class="aspect-square sepia">
+                <img src="assets/img/koku-cat.png" alt="Botella de Kokumbucha" class="aspect-square hue-rotate-90">
+                <img src="assets/img/koku-bottles.jpg" alt="Botella de Kokumbucha" class="aspect-square hue-rotate-180">
             </div>
         </div>
     </section>
-
-    <!-- Join Us! Section -->
-    <!--<section id="noticias" class="py-12 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-2xl font-neutral-900 mb-4">SUSCRÍBETE A NUESTRO NEWSLETTER</h3>
-            <div class="flex flex-col md:flex-row max-w-md mx-auto justify-center">
-                <input type="email" placeholder="Correo" class="px-4 py-3 border-2 border-neutral-900 rounded mb-2 md:mb-0 md:mr-2 focus:outline-none">
-                <button class="bg-neutral-900 text-white px-6 py-3 font-bold hover:bg-white hover:text-neutral-900 border-2 border-neutral-900 transition">
-                    SUSCRIBIRME
-                </button>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Footer -->
     <footer class="bg-neutral-900 text-white py-8">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex flex-col text-3xl font-bold mb-4 md:mb-0 text-center md:text-left">
+                <div class="flex flex-col mb-4 md:mb-0 text-center md:text-left">
                     <span class="text-lg md:2xl font-bold text-white px-2 py-1 fs-underdog">KOKU</span>
                     <a href="mailto:koku_koku@example.com" class="text-sm md:text-base font-light text-white px-2 py-1 hover:underline">koku_koku@example.com</a>
                 </div>
-                <div class="text-[10px] md:text-sm">© 2023 Kokumbucha. Todos los derechos reservados.</div>
+                <div class="font-bold mb-4 md:mb-0 text-center md:text-right">
+                    <ul class="mt-1 flex flex-col list-none">
+                        <li><span class="text-sm md:text-base font-light text-white">Puebla, Puebla</span></li>
+                        <li><span class="text-sm md:text-base font-light text-white">Pachuca de Soto, Hidalgo</span></li>
+                    </ul>
+                </div>
             </div>
+            <!--<div class="text-[10px] md:text-sm">© 2023 Kokumbucha. Todos los derechos reservados.</div>-->
         </div>
     </footer>
     
     <!-- Script personalizado -->
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </HTML>

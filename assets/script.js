@@ -13,24 +13,18 @@ window.addEventListener('scroll', () => {
         nav.classList.add('text-white');
     }
 });
-// ScrollReveal animations
-ScrollReveal().reveal('nav', {
-    delay: 200,
+
+
+ScrollReveal().reveal('#hero .container', {
+    delay: 100,
     duration: 1000,
     origin: 'top',
     distance: '50px'
 });
 
-ScrollReveal().reveal('#hero h1', {
-    delay: 300,
-    duration: 1000,
-    origin: 'left',
-    distance: '50px'
-});
-
-ScrollReveal().reveal('#hero img', {
+ScrollReveal().reveal('#productos .grid', {
     delay: 400,
     duration: 1000,
-    origin: 'right',
+    origin: 'bottom',
     distance: '50px'
 });
