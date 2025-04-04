@@ -5,12 +5,12 @@ window.addEventListener('scroll', () => {
         // Si el scroll está en la parte superior, añadimos el filtro de difuminado
         nav.classList.add('bg-neutral-300');
         nav.classList.remove('py-4');
-        nav.classList.remove('text-white');
+        // nav.classList.remove('text-white');
     } else {
         // Si no, eliminamos el filtro de difuminado
         nav.classList.remove('bg-neutral-300');
         nav.classList.add('py-4');
-        nav.classList.add('text-white');
+        // nav.classList.add('text-white');
     }
 });
 
