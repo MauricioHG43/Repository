@@ -1,3 +1,14 @@
+// Función para abrir y cerrar el menú de navegación
+function toggleMenu() {
+    console.log("CLOCL EN EL MENU")
+    const menu = document.querySelector('#nav-links');
+    if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+    } else {
+        menu.classList.add('hidden');
+    }
+}
+
 // Seleccionamos el nav y asignamos el evento de scroll
 const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
@@ -14,14 +25,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
 ScrollReveal().reveal('#hero .container', {
     delay: 100,
     duration: 1000,
     origin: 'top',
     distance: '50px'
 });
-
 ScrollReveal().reveal('#productos .grid', {
     delay: 400,
     duration: 1000,

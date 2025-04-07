@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Satoshi';
-    src: url('fonts/Satoshi-Regular.ttf');
+    src: url('fonts/Satoshi_Complete/Satoshi-Regular.otf');
 }
 @font-face {
     font-family: 'Satoshi';
-    src: url('fonts/Satoshi-Bold.ttf');
+    src: url('fonts/Satoshi_Complete/Satoshi-Bold.otf');
     font-weight: bold;
 }
 @font-face {
     font-family: 'Satoshi';
-    src: url('fonts/Satoshi-Italic.ttf');
+    src: url('fonts/Satoshi_Complete/Satoshi-Italic.otf');
     font-style: italic;
 }
 @font-face {
     font-family: 'Satoshi';
-    src: url('fonts/Satoshi-BoldItalic.ttf');
+    src: url('fonts/Satoshi_Complete/Satoshi-BoldItalic.otf');
     font-weight: bold;
     font-style: italic;
 }
