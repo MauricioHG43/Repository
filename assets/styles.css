@@ -35,6 +35,7 @@ button:focus{
     font-family: 'Underdog', sans-serif;
 }
 .hero-bg {
-    /* background-image: url('img/koku-cat.png'); */
-
+    background-image: url('img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
 }

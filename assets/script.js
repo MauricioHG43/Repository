@@ -1,29 +1,36 @@
 // Función para abrir y cerrar el menú de navegación
-function toggleMenu() {
-    console.log("CLOCL EN EL MENU")
-    const menu = document.querySelector('#nav-links');
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-    } else {
-        menu.classList.add('hidden');
-    }
-}
+const navLinks = document.querySelector('#nav-links');
+const menu = document.querySelector('nav');
 
-// Seleccionamos el nav y asignamos el evento de scroll
-const nav = document.querySelector('nav');
+// Seleccionamos el menu y asignamos el evento de scroll
 window.addEventListener('scroll', () => {
     if (window.scrollY !== 0) {
         // Si el scroll está en la parte superior, añadimos el filtro de difuminado
-        nav.classList.add('bg-neutral-300');
-        nav.classList.remove('py-4');
-        // nav.classList.remove('text-white');
+        menu.classList.add('bg-neutral-200');
+        menu.classList.remove('py-4');
+        navLinks.classList.add('bg-neutral-200')
+        // menu.classList.remove('text-white');
     } else {
         // Si no, eliminamos el filtro de difuminado
-        nav.classList.remove('bg-neutral-300');
-        nav.classList.add('py-4');
-        // nav.classList.add('text-white');
+        menu.classList.remove('bg-neutral-200');
+        menu.classList.add('py-4');
+        navLinks.classList.remove('bg-neutral-200')
+        // menu.classList.add('text-white');
     }
 });
+function toggleMenu() {
+    if (navLinks.classList.contains('h-0')) {
+        navLinks.classList.add('h-48');
+        navLinks.classList.remove('h-0');
+        menu.classList.remove('bg-transparent');
+        menu.classList.add('bg-white');
+    } else {
+        navLinks.classList.remove('h-48');
+        navLinks.classList.add('h-0');
+        menu.classList.add('bg-transparent');
+        menu.classList.remove('bg-white');
+    }
+}
 
 ScrollReveal().reveal('#hero .container', {
     delay: 100,
